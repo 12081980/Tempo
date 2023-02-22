@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Agenda Virtual</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="conteudo">
+                <div class="titulo">                
+                    <div class="line">
+                        <div class="texto-titulo">Agenda</div>
+                    </div>
+                </div>
+                <input type="radio" name="slider" id="item-1" checked>
+                <input type="radio" name="slider" id="item-2">
+                <input type="radio" name="slider" id="item-3">
+                
+                <div class="views">                  
+
+                    <label class="view"   for="item-1" id="rotacao-1">
+                        <div class="relogio"></div>
+                    
+                    </label>
+
+                    <label class="view"  for="item-2" id="rotacao-2">
+                        <div>
+                              <h2>Compromissos</h2>
+                             <div id="compromissos"> 
+                                <a href="#"> <i class="fa-solid fa-person-dress"></i><i class="fa-solid fa-person"></i> Familia</a>
+                                <br>
+                                <a href="#"><i class="fa-sharp fa-solid fa-building"></i> Trabalho</a>
+                             <a href="#"><i class="fa-solid fa-icons"></i> Outros</a>                                                    
+                            
+                              
+                              
+                            </div>
+                              </div>
+                          </label>
+
+                    <label class="view"   for="item-3" id="rotacao-3">
+                        <!-- <div class="conteudo"> -->
+                            <div class="calendario">
+                                <header>
+                                    <h2 id="mes">Fevereiro</h2>
+                                    <a class="btn-ant" id="btn-prev">
+                                        << </a>
+                                            <a class="btn-pro" id="btn-next"> >> </a>
+                                </header>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <td>Dom</td>
+                                            <td>Seg</td>
+                                            <td>Ter</td>
+                                            <td>Qua</td>
+                                            <td>Qui</td>
+                                            <td>Sex</td>
+                                            <td>Sab</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="dias">
+                                        <tr>
+                                            <td class="mes-ant">1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td class="dia-atual">7</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td class="pro-mes">7</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <footer id="ano">
+                                    <h2></h2>
+                                </footer>
+                                </div>
+                            </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+<script src="./js/relogio.js"> </script>
+<script src="./js/calendario.js"> </script>
+
+</html>
